@@ -3,9 +3,6 @@ from scipy.sparse import dok_matrix;
 from random import random, choice; 
 from numpy import float64, array, multiply;
 
-# I wrote all this code a while ago, but I believe that https://dev.to/strikingloo/markov-chains-training-ai-to-write-game-of-thrones-25d6
-# was the source I used for quite a bit of it
-
 corpus = ""
 with open("messages.txt", 'r', encoding="utf8") as f:
         corpus+=f.read()
